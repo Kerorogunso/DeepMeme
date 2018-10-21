@@ -5,9 +5,9 @@ import json
 import praw
 import requests
 
-pattern_album = re.compile("(?:i|w{3})?\.?imgur.com/a/[a-zA-Z0-9#]+$")
-pattern_imagelink = re.compile("(?:i|w{3})?\.?imgur.com/[a-zA-Z0-9]+$")
-pattern_image = re.compile("\.\w+$")
+pattern_album = re.compile(r"(?:i|w{3})?\.?imgur.com/a/[a-zA-Z0-9#]+$")
+pattern_imagelink = re.compile(r"(?:i|w{3})?\.?imgur.com/[a-zA-Z0-9]+$")
+pattern_image = re.compile(r"\.\w+$")
 
 # image_extensions = ['jpg', 'jpeg', 'png', 'bmp', 'gif']
 # valid_filters = ["day", "hour", "week", "month", "year", "all"]
